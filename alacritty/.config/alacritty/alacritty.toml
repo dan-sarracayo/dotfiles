@@ -1,0 +1,10 @@
+import = [
+	# Catppuccin.
+	"~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+# Font.
+[font]
+	normal = { family = "Menlo" }
+	size = 14
+
