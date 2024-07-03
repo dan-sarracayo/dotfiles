@@ -3,6 +3,7 @@ import = [
 	"~/.config/alacritty/catppuccin-mocha.toml"
 ]
 
+# Terminal env vars.
 [env]
 	TERM = "xterm-256color"
 
@@ -10,4 +11,12 @@ import = [
 [font]
 	normal = { family = "Menlo" }
 	size = 14
+
+# Hpome comforts.
+[keyboard]
+bindings = [
+	# Option key left and right skips word.
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
 
