@@ -9,7 +9,7 @@ import = [
 
 # Font.
 [font]
-	normal = { family = "Menlo" }
+	normal = { family = "Hack Nerd Font Mono" }
 	size = 14
 
 # Hpome comforts.
