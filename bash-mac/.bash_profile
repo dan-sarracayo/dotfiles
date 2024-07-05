@@ -25,7 +25,7 @@ export NODE_PATH=/usr/lib/node_modules;
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases;
 
 # Set prompt.
-export PS1="🤖\[\e[34m\]\w \[\e[32m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[\e[0m\]\n\[\e[35m\]>\[\e[0m\]";
+export PS1="🤖\[\e[34m\]\w \[\e[32m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[\e[0m\]\n\[\e[35m\]> \[\e[0m\]";
 
 # Some local scripts scripts.
 [ -d "$PWD/scripts" ] && export PATH="$PWD/scripts:$PATH"
