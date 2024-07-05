@@ -10,7 +10,7 @@ import = [
 # Font.
 [font]
 	normal = { family = "Hack Nerd Font Mono" }
-	size = 14
+	size = 12
 
 # Hpome comforts.
 [keyboard]
