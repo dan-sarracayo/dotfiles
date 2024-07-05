@@ -19,7 +19,10 @@ export PATH="$PATH:$(yarn global bin)";
 export NODE_PATH=/usr/lib/node_modules;
 
 # Load git autocomplete.
-[ -f ~/.git-completion.bash ] && . ~/.git-completion.bash;
+GIT_COMPLETION="/opt/homebrew/etc/bash_completion.d/git-completetion.bash"
+GIT_PROMPT="/opt/homebrew/etc/bash_completion.d/git-prompt.bash"
+[ -f $GIT_COMPLETION ] && . $GIT_COMPLETION;
+[ -f $GIT_PROMPT ] && . $GIT_PROMPT;
 
 # Load aliases.
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases;
