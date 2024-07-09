@@ -11,6 +11,7 @@ alias vim="nvim";
 alias c="clear";
 
 # List aliases.
+alias ls="ls --color=auto"
 alias ll="ls -l"
 alias la="ls -al"
 
