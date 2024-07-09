@@ -5,7 +5,6 @@ alias reload="source ~/.bashrc";
 alias open="xdg-open";
 
 # Remap vi and vim to nvim.
-alias vi="nvim";
 alias vim="nvim";
 
 # set some colour auto aliases if we have colour.
