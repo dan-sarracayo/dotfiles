@@ -17,3 +17,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Ruby installation 
+export PATH="$HOME/.rbenv/bin:$PATH";
+eval "$(rbenv init -)";
+
