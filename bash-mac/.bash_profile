@@ -19,7 +19,7 @@ export PATH="$PATH:$(yarn global bin)";
 export NODE_PATH=/usr/lib/node_modules;
 
 # Load git autocomplete.
-GIT_COMPLETION="/opt/homebrew/etc/bash_completion.d/git-completetion.bash"
+GIT_COMPLETION="/opt/homebrew/etc/bash_completion.d/git-completion.bash"
 GIT_PROMPT="/opt/homebrew/etc/bash_completion.d/git-prompt.bash"
 [ -f $GIT_COMPLETION ] && . $GIT_COMPLETION;
 [ -f $GIT_PROMPT ] && . $GIT_PROMPT;
@@ -28,7 +28,7 @@ GIT_PROMPT="/opt/homebrew/etc/bash_completion.d/git-prompt.bash"
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases;
 
 # Set prompt.
-export PS1="🤖\[\e[34m\]\w \[\e[32m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[\e[0m\]\n\[\e[35m\]> \[\e[0m\]";
+export PS1="🤖 \[\e[34m\]\w \[\e[32m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[\e[0m\]\n\[\e[35m\]> \[\e[0m\]";
 
 # Some local scripts scripts.
 [ -d "$PWD/scripts" ] && export PATH="$PWD/scripts:$PATH"
