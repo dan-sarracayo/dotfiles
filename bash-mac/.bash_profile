@@ -10,13 +10,14 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH"
 
 # Load Brew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications";
+eval "$(/opt/homebrew/bin/brew shellenv)";
 
 # Load yarn bin.
 export PATH="$PATH:$(yarn global bin)";
 
 # Load node path.
-export NODE_PATH=/usr/lib/node_modules;
+export NODE_PATH="/usr/lib/node_modules";
 
 # Load git autocomplete.
 GIT_COMPLETION="/opt/homebrew/etc/bash_completion.d/git-completion.bash"
