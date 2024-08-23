@@ -11,7 +11,9 @@ alias vim="nvim";
 alias c="clear";
 
 # List aliases.
-alias ls="ls --color=auto"
-alias ll="ls -l"
-alias la="ls -al"
+alias ls="ls --color=auto";
+alias ll="ls -l";
+alias la="ls -al";
 
+# Grep with color.
+alias grep="grep --color=auto";
