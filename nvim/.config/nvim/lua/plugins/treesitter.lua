@@ -11,7 +11,8 @@ return {
 				"javascript",
 				"typescript",
 				"css",
-				"html" 
+				"html",
+				"svelte"
 			},
 			highlight = {
 				enable = true
