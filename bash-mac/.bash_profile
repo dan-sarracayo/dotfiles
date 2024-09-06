@@ -33,3 +33,6 @@ export PS1="🤖 \[\e[34m\]\w \[\e[32m\]\$(git branch 2> /dev/null | sed -e '/^[
 
 # Some local scripts scripts.
 [ -d "$PWD/scripts" ] && export PATH="$PWD/scripts:$PATH"
+
+# Bat theme
+export BAT_THEME="Catppuccin Mocha";
