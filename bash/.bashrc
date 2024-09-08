@@ -21,3 +21,6 @@ fi
 export PATH="$HOME/.rbenv/bin:$PATH";
 eval "$(rbenv init -)";
 
+# Bat theme
+export BAT_THEME="Catppuccin Mocha";
+
