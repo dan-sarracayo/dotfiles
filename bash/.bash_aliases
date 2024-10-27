@@ -24,3 +24,6 @@ alias l='ls -CF'
 # clear shortcut.
 alias c="clear"
 
+# Update everything
+alias dosystemupdate="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y";
+

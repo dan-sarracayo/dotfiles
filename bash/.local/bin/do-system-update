@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Function to loop over tasks.
+function dotask {
+	echo -n "[info] running $1... ";
+	startTime=$(date +%s);
+
+	bash -c "sudo apt $1 -y &> /dev/null";
+	exitCode="$?";
+
+	elapsedTime=$(( `date +%s` - startTime ));
+
+	if [[ $exitCode != 0 ]]; then
+		echo -e "\e[31mfailed\e[0m (${elapsedTime}s)";
+		exit 1;
+	else
+		echo -e "\e[32msuccess\e[0m (${elapsedTime}s)";
+	fi
+}
+
+# Tasks.
+dotask "update";
+dotask "upgrade";
+dotask "dist-upgrade";
+dotask "autoclean";
+dotask "autoremove";
+
+echo "[info] done.";

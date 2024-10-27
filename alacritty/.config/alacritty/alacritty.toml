@@ -1,9 +1,5 @@
-import = [
-	# Catppuccin.
-	"~/.config/alacritty/catppuccin-mocha.toml"
-]
 
-[shell]
+[terminal.shell]
 	program = "tmux"
 
 # Terminal env vars.
@@ -22,4 +18,12 @@ bindings = [
   { key = "Right", mods = "Alt", chars = "\u001BF" },
   { key = "Left",  mods = "Alt", chars = "\u001BB" },
 ]
+
+[general]
+import = [
+	# Catppuccin.
+	"~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[terminal]
 
