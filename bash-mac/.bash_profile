@@ -36,3 +36,8 @@ export PS1="🤖 \[\e[34m\]\w \[\e[32m\]\$(git branch 2> /dev/null | sed -e '/^[
 
 # Bat theme
 export BAT_THEME="Catppuccin Mocha";
+
+# GPG Config.
+GPG_TTY=$(tty);
+export GPG_TTY;
+

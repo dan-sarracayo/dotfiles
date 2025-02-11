@@ -6,6 +6,7 @@ alias reload-aliases="source ~/.bash_aliases";
 
 # Replace ye olde vim with nvim.
 alias vim="nvim";
+alias vom="nvim";
 
 # Quicker clear.
 alias c="clear";
