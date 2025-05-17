@@ -27,3 +27,9 @@ alias c="clear"
 # Update everything
 alias dosystemupdate="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y";
 
+# Firebase update
+alias update-firebase="curl -sL https://firebase.tools | upgrade=true bash";
+
+# Docker commands
+alias docker-prune="sudo docker system prune -a";
+
