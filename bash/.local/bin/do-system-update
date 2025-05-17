@@ -25,4 +25,11 @@ dotask "dist-upgrade";
 dotask "autoclean";
 dotask "autoremove";
 
+# Shutdown option.
+if [[ "$1" == "-s" ]]; then
+	echo "[info] shutdown requested";
+	echo "[info] ctl + c to cancel";
+	shutdown -h +1;
+fi
+
 echo "[info] done.";
