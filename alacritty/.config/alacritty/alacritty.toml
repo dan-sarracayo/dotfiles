@@ -22,7 +22,7 @@ bindings = [
 [general]
 import = [
 	# Catppuccin.
-	"~/.config/alacritty/catppuccin-mocha.toml"
+	"~/.config/alacritty/catppuccin-frappe.toml"
 ]
 
 [terminal]
