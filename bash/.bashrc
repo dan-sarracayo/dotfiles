@@ -10,7 +10,7 @@ parse_branch() {
 }
 
 # Custom prompt.
-export PS1="\[\e[32m\]\w \[\e[34m\]\$(parse_branch)\[\e[0m\]\n\[\e[35m\]>\[\e[0m\] ";
+export PS1="\[\e[31m\h\] \[\e[32m\]\w \[\e[34m\]\$(parse_branch)\[\e[0m\]\n\[\e[35m\]>\[\e[0m\] ";
 
 # Source aliases.
 if [ -f ~/.bash_aliases ]; then
