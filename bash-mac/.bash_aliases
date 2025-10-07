@@ -21,3 +21,4 @@ alias grep="grep --color=auto";
 
 # Git jolt, rehashes last commit and force pushes.
 alias git-jolt="git commit --amend --no-edit && git push --force-with-lease";
+
