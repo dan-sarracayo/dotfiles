@@ -29,10 +29,11 @@ GIT_PROMPT="/opt/homebrew/etc/bash_completion.d/git-prompt.bash"
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases;
 
 # Set prompt.
-export PS1="🤖 \[\e[34m\]\w \[\e[32m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[\e[0m\]\n\[\e[35m\]> \[\e[0m\]";
+export PS1="🤖 \[\e[31m\]macbook \[\e[34m\]\w \[\e[32m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[\e[0m\]\n\[\e[35m\]> \[\e[0m\]";
 
-# Some local scripts scripts.
-[ -d "$PWD/scripts" ] && export PATH="$PWD/scripts:$PATH"
+# Some local scripts.
+[ -d "$PWD/scripts" ] && export PATH="$PWD/scripts:$PATH";
+[ -d "$HOME/.local/bin" ] && export PATH="$HOME/.local/bin:$PATH";
 
 # Bat theme
 export BAT_THEME="Catppuccin Mocha";
@@ -40,4 +41,17 @@ export BAT_THEME="Catppuccin Mocha";
 # GPG Config.
 GPG_TTY=$(tty);
 export GPG_TTY;
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Postgres
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH";
+
+# AWS Profile
+export AWS_PROFILE="default";
+
+# Stop CRA from opening browser
+export BROWSER=none;
 
