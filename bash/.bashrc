@@ -17,10 +17,16 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Ruby installation 
-export PATH="$HOME/.rbenv/bin:$PATH";
-eval "$(rbenv init -)";
-
 # Bat theme
 export BAT_THEME="Catppuccin Mocha";
 
+# Ruby
+export PATH="$HOME/.rbenv/bin:$PATH";
+if [ -d "$HOME/.rbenv/bin" ]; then
+	eval "$(rbenv init -)";
+fi
+
+# Rust
+if [ -d "$HOME/.cargo" ]; then
+	. "$HOME/.cargo/env"
+fi
